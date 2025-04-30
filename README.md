@@ -1,6 +1,3 @@
-# CCP_HallBookingApp
-A mobile application built with Java + SQLite that allows users to request bookings for various halls like Seminar Rooms, Smart Rooms, and Auditoriums. Bookings are reviewed and approved by an admin before confirmation. The app can integrate with Firebase for user authentication, booking data storage, and notification management.
-
 # CCP Hall Booking Android App
 
 The **CCP Hall Booking App** is an Android application that allows users to request bookings for various campus venues (like Seminar Hall, Smart Room, etc.). The booking is then reviewed and approved by an Admin. The app ensures that venues cannot be double-booked and streamlines communication between users and admin for event organization.
