@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:gravity="center"
+android:background="@color/white">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plusjakartasansbold"
+            android:textColor="@color/Blue6"
+            android:gravity="center"
+            android:text="Venue Details"
+            android:textSize="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="5dp"/>
+
+<EditText
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:ems="10"
+    android:hint=" Venue name"
+    android:inputType="text"
+    android:fontFamily="@font/plusjakartasansmedium"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/textViewTitle"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/rounded_white_bg"/>
+
+<Spinner
+    android:id="@+id/type"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_bg"
+    android:fontFamily="@font/plusjakartasansmedium"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/name"
+    android:layout_marginTop="20dp" />
+
+<EditText
+    android:id="@+id/description"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_bg"
+    android:fontFamily="@font/plusjakartasansmedium"
+    android:ems="10"
+    android:hint=" Description"
+    android:padding="10dp"
+    android:inputType="textMultiLine"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/type"
+    android:layout_marginTop="20dp"/>
+
+
+<EditText
+    android:id="@+id/location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/rounded_white_bg"
+    android:fontFamily="@font/plusjakartasansmedium"
+    android:ems="10"
+    android:hint=" Location"
+    android:inputType="text"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/description"
+    android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/img_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_bg"
+        android:fontFamily="@font/plusjakartasansmedium"
+        android:padding="10dp"
+        android:ems="10"
+        android:hint=" Paste venue image link here"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/location"
+        android:layout_marginTop="20dp"/>
+
+<Button
+    android:id="@+id/addVenueBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/Blue6"
+    android:paddingBottom="5dp"
+    android:paddingHorizontal="30dp"
+    android:textColor="@color/white"
+    android:fontFamily="@font/plusjakartasansbold"
+    android:text="Add Venue"
+    android:textSize="20dp"
+    app:cornerRadius="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/img_path"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="30dp"
+    android:textAllCaps="false"
+    android:background="@drawable/rounded_corner"/>
+
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
+

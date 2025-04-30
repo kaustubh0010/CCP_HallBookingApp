@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/Blue3"
+    tools:context=".aboutUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:id="@+id/logoLayer"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/christ_college_logo"/>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plusjakartasansbold"
+        android:layout_marginTop="10dp"
+        android:text="About Us"
+        android:paddingLeft="10dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/Blue1"
+        android:layout_below="@+id/logoLayer"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/about_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_title"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:fontFamily="@font/plusjakartasansmedium"
+        android:textColor="@color/Blue1"
+        android:text="Christ College, Pune, represents an esteemed initiative by the Carmel Vidya Bhavan Trust, established by the Carmelites of Mary Immaculate (CMI), India's pioneering indigenous religious congregation. The institution draws profound inspiration from Saint Chavara, a visionary whose multifaceted legacy spans education, social reform, communication, cultural development, and spiritual formation. Anchored in this rich intellectual and cultural tradition, Christ College is committed to providing an education that surpasses distinctions of religion, caste, or creed. The college’s faculty, deeply committed and academically distinguished, ensure that students receive an education that is comprehensive and attuned to contemporary advancements within their respective disciplines. This integrative approach seeks to cultivate individuals of moral integrity and intellectual rigor, equipping them to make substantive contributions to society and engage thoughtfully with the complexities of the modern world."
+        android:layout_gravity="center"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/copyright_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plusjakartasanslight"
+        android:text="Copyright © Christ College, Pune 2025"
+        android:textSize="12sp"
+        android:textColor="@color/Blue5"
+        android:layout_below="@+id/about_description"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="0dp"
+         android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

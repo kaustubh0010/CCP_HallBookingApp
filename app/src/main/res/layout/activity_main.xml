@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue1">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="260dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/christ_college_logo"
+        android:padding="10dp" />
+
+    <!-- App Slogan (Placed on the image towards the bottom-left) -->
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_below="@id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking App"
+        android:fontFamily="@font/timesnewromanbold"
+        android:textStyle="bold"
+        android:textSize="42sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Blue5"
+        android:gravity="center"/>
+</RelativeLayout>

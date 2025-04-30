@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue5"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtRecents"
+        android:text="Your booked venues"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/plusjakartasansbold"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textColor="@color/Blue2"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_below="@id/txtRecents"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        app:defaultQueryHint="@string/search_query_hint"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/plusjakartasansmedium"
+        android:background="@drawable/rounded_white_bg"
+        android:layout_height="40dp" />
+    <ScrollView
+        android:layout_below="@id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/mainLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    Footer  -->
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@color/Blue1"-->
+<!--        app:itemIconTint="@color/Blue5"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:menu="@menu/bottom_navigation_menu" />-->
+
+</RelativeLayout>

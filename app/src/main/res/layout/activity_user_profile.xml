@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+
+        <RelativeLayout
+            android:paddingHorizontal="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="321dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/plusjakartasansbold"
+                    android:textColor="@color/Blue6"
+                    android:gravity="center"
+                    android:text="MY PROFILE"
+                    android:textSize="40dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/user" />
+
+                </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_below="@id/cardView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/plusjakartasansbold"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/profileName"
+                    android:paddingLeft="10dp"
+                    style="@style/CustomDateTextAppearance"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:background="@drawable/rounded_white_bg"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text=" USER NAME" />
+
+            <TextView
+                android:id="@+id/profileDept"
+                android:layout_below="@id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/plusjakartasansbold"
+                android:gravity="center"
+                android:text="Department"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/DeptName"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/profileDept"
+                    android:paddingLeft="10dp"
+                    style="@style/CustomDateTextAppearance"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:background="@drawable/rounded_white_bg"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text=" USER DEPT" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_below="@id/DeptName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/plusjakartasansbold"
+                android:gravity="center"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/profileEmail"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:background="@drawable/rounded_white_bg"
+                    android:paddingLeft="10dp"
+                    style="@style/CustomDateTextAppearance"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textEmailAddress"
+                    android:text=" USER EMAIL" />
+
+            <TextView
+                android:id="@+id/profilePhone"
+                android:layout_below="@id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/plusjakartasansbold"
+                android:gravity="center"
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/profilePhone"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="10dp"
+                    style="@style/CustomDateTextAppearance"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:background="@drawable/rounded_white_bg"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:text=" USER PHONE" />
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Blue6"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:background="@drawable/rounded_corner"
+                    android:textColor="@color/white"
+                    android:text="EDIT PROFILE"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

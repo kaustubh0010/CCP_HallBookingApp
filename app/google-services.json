@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "888999750688",
+    "project_id": "hallbookingapp-dd657",
+    "storage_bucket": "hallbookingapp-dd657.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888999750688:android:c46a6498930c0c7bcf6045",
+        "android_client_info": {
+          "package_name": "com.example.hallbooking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtHvt3AcBzlCfXfLsAZ-SA-bbhwjJ-XCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

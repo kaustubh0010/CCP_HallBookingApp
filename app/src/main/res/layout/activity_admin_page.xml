@@ -1,0 +1,211 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- ADD VENUE -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAddVenue"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="@color/Blue6"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/addImageView"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/add_venue_icon"
+                        android:layout_centerVertical="true"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/addTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/addImageView"
+                        android:fontFamily="@font/plusjakartasansbold"
+                        android:layout_marginLeft="15dp"
+                        android:text="ADD VENUE"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- BOOKED VENUES -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBookedVenues"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="@color/Blue6"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/bookedImageView"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/booked_venue_icon"
+                        android:layout_centerVertical="true"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/bookedTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/bookedImageView"
+                        android:fontFamily="@font/plusjakartasansbold"
+                        android:layout_marginLeft="15dp"
+                        android:text="BOOKED VENUES"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- VIEW ALL VENUES -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAllVenues"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="@color/Blue6"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/viewAllVenue"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/all_venue_icon"
+                        android:layout_centerVertical="true"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/venueTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/viewAllVenue"
+                        android:fontFamily="@font/plusjakartasansbold"
+                        android:layout_marginLeft="15dp"
+                        android:text="VENUES"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- VIEW ALL USERS -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAllUsers"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="@color/Blue6"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/viewAllUsers"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/all_users_icon"
+                        android:layout_centerVertical="true"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/usersTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/viewAllUsers"
+                        android:fontFamily="@font/plusjakartasansbold"
+                        android:layout_marginLeft="15dp"
+                        android:text="USERS"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- NEW REQUESTS TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAvail"
+                android:text="New Requests"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/plusjakartasansbold"
+                android:textSize="20sp"
+                android:textColor="@color/Blue1"/>
+
+            <!-- SCROLLVIEW FOR REQUESTS -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/downLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
